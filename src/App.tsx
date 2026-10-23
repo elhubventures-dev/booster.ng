@@ -10,6 +10,8 @@ import { ContactSection } from './components/ContactSection';
 import { InvestmentRiskDisclosure } from './components/InvestmentRiskDisclosure';
 import { SiteFooter } from './components/SiteFooter';
 import { LegalModal, LegalModalType } from './components/LegalModal';
+import { WhatsAppFloat } from './components/WhatsAppFloat';
+import { BackToTop } from './components/BackToTop';
 
 // Preserved components for upcoming Phase 2 (audit dossier, forms, login, workflows)
 // import { DeveloperReviewModal } from './components/DeveloperReviewModal';
@@ -71,6 +73,10 @@ export default function App() {
         type={legalModalType}
         onClose={() => setLegalModalType(null)}
       />
+
+      {/* Floating controls: back-to-top (left) + WhatsApp (right) */}
+      <BackToTop />
+      <WhatsAppFloat />
     </div>
   );
 }

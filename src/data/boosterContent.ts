@@ -45,12 +45,21 @@ export interface FAQItem {
   answer: string;
 }
 
+export interface ContactPhone {
+  id: string;
+  label: string;
+  display: string;
+  /** Digits only, country code included (for tel: and wa.me links) */
+  e164: string;
+}
+
 export interface BoosterConfig {
   brandName: string;
   officialDomain: string;
   sponsorName: string;
   sponsorWebsite: string;
   contactEmail: string;
+  contactPhones: ContactPhone[];
   primaryCurrency: string;
   currencySymbol: string;
   primaryMarket: string;
@@ -71,6 +80,20 @@ export const BOOSTER_CONFIG: BoosterConfig = {
   sponsorName: 'Beyond Borders Real Estate Limited',
   sponsorWebsite: 'https://beyondborders.ng/',
   contactEmail: 'invest@booster.ng',
+  contactPhones: [
+    {
+      id: 'line-1',
+      label: 'Enquiry Line 1',
+      display: '+2349028497393',
+      e164: '2349028497393',
+    },
+    {
+      id: 'line-2',
+      label: 'Enquiry Line 2',
+      display: '+2348149344813',
+      e164: '2348149344813',
+    },
+  ],
   primaryCurrency: 'NGN',
   currencySymbol: '₦',
   primaryMarket: 'Nigeria',
@@ -319,7 +342,7 @@ export const FAQ_ITEMS: FAQItem[] = [
     id: 'faq-6',
     question: 'How can I get in touch with the team?',
     answer:
-      'You can reach our corporate investment desk directly by emailing invest@booster.ng, submitting a message through our Contact section below, or visiting our sponsor’s corporate portal at https://beyondborders.ng/.',
+      'You can reach our corporate investment desk by calling or messaging +2349028497393 or +2348149344813 on WhatsApp, emailing invest@booster.ng, using the Contact section below, or visiting our sponsor’s corporate portal at https://beyondborders.ng/.',
   },
   {
     id: 'faq-7',

@@ -2,7 +2,7 @@ import React from 'react';
 import { BoosterLogo } from './BoosterLogo';
 import { BOOSTER_CONFIG } from '../data/boosterContent';
 import { LegalModalType } from './LegalModal';
-import { Mail, Globe, ArrowUpRight } from 'lucide-react';
+import { Mail, Globe, ArrowUpRight, Phone } from 'lucide-react';
 
 interface SiteFooterProps {
   onOpenLegalModal: (type: LegalModalType) => void;
@@ -98,6 +98,18 @@ export const SiteFooter: React.FC<SiteFooterProps> = ({
                   {BOOSTER_CONFIG.contactEmail}
                 </a>
               </div>
+
+              {BOOSTER_CONFIG.contactPhones.map((phone) => (
+                <div key={phone.id} className="flex items-center gap-2">
+                  <Phone className="w-4 h-4 text-[#24B84A] shrink-0" />
+                  <a
+                    href={`tel:+${phone.e164}`}
+                    className="hover:text-white transition-colors"
+                  >
+                    {phone.display}
+                  </a>
+                </div>
+              ))}
 
               <div className="flex items-center gap-2 pt-1">
                 <Globe className="w-4 h-4 text-[#C5A059] shrink-0" />
