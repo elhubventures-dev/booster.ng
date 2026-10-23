@@ -112,13 +112,6 @@ export const SiteFooter: React.FC<SiteFooterProps> = ({
                 </a>
               </div>
             </div>
-
-            <div className="p-4 rounded-xl bg-black/40 border border-white/10 text-xs text-neutral-400 leading-relaxed">
-              <span className="text-neutral-200 font-semibold block mb-1">
-                Informational Phase 1 Notice
-              </span>
-              This website serves exclusively as a digital brand presentation. Live investments, deposits, and payment processing are not active in this release.
-            </div>
           </div>
         </div>
 
