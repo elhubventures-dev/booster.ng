@@ -1,5 +1,6 @@
 import React from 'react';
 import { ArrowRight, Compass, ShieldAlert, Award } from 'lucide-react';
+import landbankingIntroImage from '../assets/images/booster_landbanking_intro_1792702155380.jpg';
 
 export const BrandIntroduction: React.FC = () => {
   return (
@@ -10,7 +11,7 @@ export const BrandIntroduction: React.FC = () => {
           <div className="lg:col-span-6 order-2 lg:order-1">
             <div className="relative rounded-2xl overflow-hidden shadow-2xl shadow-emerald-950/10 border border-neutral-200/80 bg-neutral-100">
               <img
-                src="/src/assets/images/booster_landbanking_intro_1792702155380.jpg"
+                src={landbankingIntroImage}
                 alt="Master-planned luxury real estate community with sustainable architecture and lush green parcels"
                 referrerPolicy="no-referrer"
                 className="w-full h-[360px] sm:h-[440px] lg:h-[480px] object-cover hover:scale-105 transition-transform duration-700 ease-out"

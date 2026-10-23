@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { ArrowDown, ArrowUpRight, Shield, Building2, TrendingUp } from 'lucide-react';
+import heroImage from '../assets/images/booster_hero_concept_1792702154755.jpg';
 
 export const HeroSection: React.FC = () => {
   const [imgLoaded, setImgLoaded] = useState(false);
@@ -13,7 +14,7 @@ export const HeroSection: React.FC = () => {
       {/* Background Hero Image with Controlled Gradient Scrim */}
       <div className="absolute inset-0 z-0">
         <img
-          src="/src/assets/images/booster_hero_concept_1792702154755.jpg"
+          src={heroImage}
           alt="Booster emerald green aerodynamic performance car overlooking golden-hour skyline and prime real estate developments"
           referrerPolicy="no-referrer"
           className={`w-full h-full object-cover object-center lg:object-[center_35%] transition-opacity duration-700 ${

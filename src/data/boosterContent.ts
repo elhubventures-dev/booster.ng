@@ -4,6 +4,10 @@
  * from presentation components.
  */
 
+import abujaLocationImage from '../assets/images/booster_abuja_location_1792702156088.jpg';
+import portHarcourtLocationImage from '../assets/images/booster_portharcourt_location_1792702156341.jpg';
+import lagosLocationImage from '../assets/images/booster_lagos_location_1792702156142.jpg';
+
 export interface InvestmentPlan {
   id: string;
   code: 'A' | 'B' | 'C' | 'D' | 'E';
@@ -251,7 +255,7 @@ export const PROJECT_LOCATIONS: LocationProject[] = [
       'Strategic growth corridors across the FCT exhibiting robust infrastructure expansion, diplomatic demand, and steady real estate capital appreciation.',
     focusArea: 'Strategic Land Parcels & Diplomatic Hubs',
     status: 'Proposed Corridor (Subject to Final Inventory)',
-    image: '/src/assets/images/booster_abuja_location_1792702156088.jpg',
+    image: abujaLocationImage,
     altText: 'Modern urban view of Abuja Federal Capital Territory Nigeria with central commercial towers',
   },
   {
@@ -263,7 +267,7 @@ export const PROJECT_LOCATIONS: LocationProject[] = [
       'Prime industrial, commercial, and residential growth sectors across Greater Port Harcourt, supported by sustained commercial energy sector activity.',
     focusArea: 'Prime Commercial Corridors & Planned Residential',
     status: 'Proposed Corridor (Subject to Final Inventory)',
-    image: '/src/assets/images/booster_portharcourt_location_1792702156341.jpg',
+    image: portHarcourtLocationImage,
     altText: 'Contemporary planned real estate development in Port Harcourt Rivers State Nigeria',
   },
   {
@@ -275,7 +279,7 @@ export const PROJECT_LOCATIONS: LocationProject[] = [
       'High-velocity property development zones along the Lekki-Epe expressway and waterfront commercial axes driving West Africa’s premier private capital market.',
     focusArea: 'Waterfront & High-Growth Expansion Zones',
     status: 'Proposed Corridor (Subject to Final Inventory)',
-    image: '/src/assets/images/booster_lagos_location_1792702156142.jpg',
+    image: lagosLocationImage,
     altText: 'Twilight panoramic skyline of Lagos Nigeria featuring waterfront real estate towers',
   },
 ];
